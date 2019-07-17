@@ -12,25 +12,17 @@ private double numero;
     public Presionn (double numero) {
         this.numero = numero;
     }
-
-   
-
-    public double getNumero() {
+ public double getNumero() {
         return numero;
     }
 
     public void setNumero(double numero) {
         this.numero = numero;
-    }
-
- 
-
-   
-   
+    } 
 public void LeerNumero(){
-    Scanner dato = new Scanner (System.in); 
+    Scanner entrada = new Scanner (System.in); 
     System.out.println("Ingrese el numero para realiza la conversion");
-    numero = dato.nextDouble();
+    numero = entrada.nextDouble();
    
   }
 public double Conversionpascal (){
@@ -57,17 +49,27 @@ public double Conversionmetro2H2O (){
 double metroagua = numero*10332.274527999;
 return numero;   
 }
-
+public double  ConversiommHg(){
+double mmHg = numero*760.00210017852;
+return mmHg;
+}
+public double ConversionTorr(){
+ double Torr = numero*760.00210017852;
+ return Torr;
+}
 public static void main(String[] args) {
     Presionn objeto = new Presionn(0);
     objeto.LeerNumero();
-    int opcion = Integer.parseInt(JOptionPane.showInputDialog(null, "Conversor de Unidades de Presion\n\n"
+    int opcion = Integer.parseInt(JOptionPane.showInputDialog(null, "conversor de Unidades de presion \n\n")
             +"1)Pascal\n"
             + "2)Bar\n"
             + "3)Kilogramo por metro cuadrado\n"
             + "4)Hectopascal\n"
             + "5)milibar\n"
-            + "6)metro cuadrado de agua\n"));
+            + "6)metro cuadrado de agua\n"
+            + "7)mmHg\n"
+            +"8) Torr\n");       
+            
             
     switch (opcion){
         case 1: 
@@ -88,12 +90,19 @@ public static void main(String[] args) {
         case 6: 
             System.out.println(objeto.Conversionmetro2H2O());
         break;
+        case 7:
+            System.out.println(objeto.ConversiommHg());
+        break;
+        case 8:
+        System.out.println(objeto.ConversionTorr());
+        
+        break;
         default : System.out.println("Seleccione una opcionvalida");      
             
-            
-    } 
-                              
-}    
+    }      
+    }
 
-}
+}  
+
+
 
