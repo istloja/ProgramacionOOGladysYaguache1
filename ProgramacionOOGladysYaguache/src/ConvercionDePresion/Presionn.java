@@ -1,7 +1,7 @@
 
 package ConvercionDePresion;
 
-import java.util.Scanner;
+
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
@@ -67,7 +67,8 @@ public static void main(String[] args) {
             + "3)Kilogramo por metro cuadrado\n"
             + "4)Hectopascal\n"
             + "5)milibar\n"
-            + "6)metro cuadrado de agua\n"));  
+            + "6)metro cuadrado de agua\n"));
+            
     switch (opcion){
         case 1: 
             System.out.println(objeto.Conversionpascal());
@@ -91,11 +92,7 @@ public static void main(String[] args) {
             
             
     } 
-            
-            
-            
-
-
+                              
 }    
 
 }
