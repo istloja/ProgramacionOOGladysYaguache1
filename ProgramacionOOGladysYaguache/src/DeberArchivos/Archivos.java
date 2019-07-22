@@ -13,47 +13,47 @@ public class Archivos {
        System.out.println("2:Documentos");
        System.out.println("3:Imagenes");
        System.out.println("4:videos");
-       System.out.println("5:musica");
+       System.out.println("5:Musica");
        opciones = Ale.nextInt();
      if (opciones > 0) {
           switch (opciones) {
         case 1:
-        File carpeta = new File("C:\\Users\\Gladys\\Desktop");
+        File carpeta = new File("C:\\Users\\HOGAR\\Desktop");
         String[] archivos = carpeta.list();
         for (int i = 0; i < archivos.length; i++) {
          System.out.println(archivos[i]);
           }
        break;
      case 2:
-       File carpeta1 = new File("C:\\Users\\Gladys\\Documentos");
+       File carpeta1 = new File("C:\\Users\\HOGAR\\Documents");
        archivos = carpeta1.list();
        for (int i = 0; i < archivos.length; i++) {
          System.out.println(archivos[i]);
         }
        break;
      case 3:
-      File carpeta2 = new File("C:\\Users\\Gladys\\Imagenes");
+      File carpeta2 = new File("C:\\Users\\HOGAR\\Pictures");
       archivos = carpeta2.list();
       for (int i = 0; i < archivos.length; i++) {
        System.out.println(archivos[i]);
         }
      break;
    case 4:
-     File carpeta3 = new File("C:\\Users\\Gladys\\Videos");
+     File carpeta3 = new File("C:\\Users\\HOGAR\\Videos");
      archivos = carpeta3.list();
      for (int i = 0; i < archivos.length; i++) {
        System.out.println(archivos[i]);
         }
      break;
    case 5:
-    File carpeta4 = new File("C:\\Users\\Gladys\\musica");
+    File carpeta4 = new File("C:\\Users\\HOGAR\\Music");
     archivos = carpeta4.list();
     for (int i = 0; i < archivos.length; i++) {
       System.out.println(archivos[i]);
         }
      break;
     default:
-      System.out.println("ingresar un numero del 1 al 5 ");
+      System.out.println("Por favor digite un numero del 1 al 5 ");
      break;
          }
      } else {
