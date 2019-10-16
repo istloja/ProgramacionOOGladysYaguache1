@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Drportes_serealizable;
 
-/**
- *
- * @author HOGAR
- */
-public class auspiciante {
+import java.io.Serializable;
+
+
+public class auspiciante implements Serializable {
     
      private String nombre;
     private String apellido;

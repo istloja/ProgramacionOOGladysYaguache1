@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Drportes_serealizable;
 
-/**
- *
- * @author HOGAR
- */
-public class estadio {
+import java.io.Serializable;
+
+
+public class estadio implements Serializable {
       private int numero_ascientos;
     private String tipo_de_estadio;
     private String nombre;

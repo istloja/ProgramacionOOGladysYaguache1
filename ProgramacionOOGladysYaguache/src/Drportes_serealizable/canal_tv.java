@@ -1,21 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Drportes_serealizable;
 
-/**
- *
- * @author HOGAR
- */
-public class canal_tv {
+import java.io.Serializable;
+
+
+public class canal_tv implements Serializable{
+    
     private String nombre;
     private int numero_de_canal;
     private String categoria_de_canal;
     private int trabajadores;
     private int horas_de_trabajo;
-
     public String getNombre() {
         return nombre;
     }
